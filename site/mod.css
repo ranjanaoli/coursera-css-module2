@@ -6,99 +6,130 @@
   .row{
     margin:0;
     background-color: aqua;
+    width:100%
   }
-  .divclass{
-    background-color: aqua;
-    clear:right;
-    border:1px black;
-    width:100%;   
-    margin: 0.25%;
+  body{
+    font-family: Arial, Helvetica, sans-serif;
   }
   h1{
 margin-bottom: 20px;
 text-align: center;
 font-size: 125%;
-font-family: Arial, Helvetica, sans-serif;
+
 }
-@media (min-width:992px){
-  .col1{
-  text-align: right;
+.section_container{
+
   overflow:auto; 
-  width:31.0%;
   border:1px  solid black;
-  float:left;
   height:230px;
-  padding:1%;
-  margin:1%;
+  margin:20px;
   background-color: antiquewhite;
   position:relative;
 }
-.col2{
-  text-align: right;
-  overflow:auto;  
-  width:31.0%;
-  border:1px  solid black;
-  float:left;
-  height:230px;
-  padding:1%;
-  margin: 1%;
-  background-color: antiquewhite;
-  position:relative;
-}
-.col3{
-  text-align: right;
-  overflow:auto;  
-  width:31.0%;
-  border:1px  solid black;
-  float:left;
-  height:230px;
-  padding:1%;
-  margin: 1%;
-  background-color: antiquewhite;
-  position:relative;
-}
-}
-@media(min-width:768px) and (max-width:991px){
-  .col1{
-  text-align: right;
+section_head{
+  position: absolute;
+  top:0px;
+  right:0px;
+  float:right;
+  text-align: center;
+  font-size:75%;
+  width:25%;
+  border: 1px solid black;
   overflow:auto;
-  width:47%;
-  border:1px  solid black;
-  float:left;
-  height:200px;
-  padding:1%;
-  margin: 1%;
-  background-color: antiquewhite;
-  position:relative;
 }
-.col2{
-  text-align: right;
-  overflow:auto;
-  width:47%;
-  border:1px  solid black;
-  float:left;
-  height:200px;
-  padding:1%;
-  margin: 1%;
-  background-color: antiquewhite;
-  position:relative;
+#p1{
+  color: crimson;
+  background-color: burlywood;
+  
 }
-.col3{
-  text-align: right;
-  overflow:auto;
-  width:96%;
-  border:1px  solid black;
-  height:200px;
+ #p2{
+  color: blue;
+  background-color:rgb(218, 213, 169);
+}
+#p3{
+  
+  color:blueviolet;
+  
+  background-color:rgb(134, 194, 196);
+  
+}
+section{
+  margin:5px;
+font-weight: bold;
+  font-size: 120%;
   clear:both;
-  padding:1%;
-  margin: 1%;
-  background-color: antiquewhite;
-  position:relative;
 }
+.cnt{
+  text-align: left;
+  padding:10px;
+  font-size:50%;
+  color:black;
+ overflow: auto;
 }
+
+@media (min-width:992px){
+  .col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
+    float:left;
+}  
+.col-lg-1{
+  width:8.33%;
+}
+.col-lg-2{
+  width:16.66%;
+}
+.col-lg-3{
+  width:25%;
+} 
+.col-lg-4{
+    width:33.33%;
+  } 
+  .col-lg-5{
+    width:41.66%;
+  }
+  .col-lg-6{
+    width:50%;
+  }
+  .col-lg-7{
+    width:58.33%;
+  }
+  .col-lg-8{
+    width:66.66%;
+  }
+  .col-lg-9{
+    width:74.99%;
+  }
+  .col-lg-10{
+    width:83.33%;
+  }
+  .col-lg-11{
+    width:91.66%;
+  }
+  .col-lg-12{
+    width:100%;
+  }
+  }
+@media(min-width:768px) and (max-width:991px){
+  .col-md-6,.col-md-12{
+float: left;
+  }
+  .col-md-6{
+    width:50%;
+  }
+  .col-md-12{
+    width:100%;
+  }
+}
+
 
 
 @media(min-width:0px) and (max-width:767px){
+  .col-md-12{
+    clear:both;
+  }
+
+  .col-md-12{
+    width:100%;
+  }
   .col1{
   text-align: right;
   overflow:auto;
@@ -138,66 +169,4 @@ font-family: Arial, Helvetica, sans-serif;
   background-color: antiquewhite;
   position:relative;
 }
-}
-#p1{
-  position: absolute;
-  top:0px;
-  right:0px;
-  float:right;
-  text-align: center;
-  color: crimson;
-  font-size:75%;
-  font-family: Arial, Helvetica, sans-serif;
-  width:25%;
-  background-color: burlywood; 
-  border: 1px solid black;
-  overflow:auto;
-}
- #p2{
-  position: absolute;
-  top:0px;
-  right:0px;
-  float:right;
-  text-align: center;
-  color: blue;
-  font-size:75%;
-  font-family: Arial, Helvetica, sans-serif;
-  width:25%;
-  background-color:rgb(218, 213, 169);
-  border: 1px solid black;
-  overflow:auto;
-}
-#p3{
-  position: absolute;
-  top:0px;
-  right:0px;
-  float:right;
-  text-align: center;
-  color:blueviolet;
-  font-size:75%;
-  font-family: Arial, Helvetica, sans-serif;
-  width:25%;
-  background-color:rgb(134, 194, 196);
-  border: 1px solid black;
-  overflow:auto;
-}
-section{
-  margin:5px;
-font-weight: bold;
-  font-size: 120%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.cnt{
-  text-align: left;
-  margin-right: auto;
-  margin-left: auto;
-  font-size:50%;
-  font-family: Arial, Helvetica, sans-serif;
-  color:black;
- clear:right; 
- overflow: auto;
-}
-
-section {
-  clear:left;
 }
